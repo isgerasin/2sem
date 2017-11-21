@@ -1,0 +1,43 @@
+     1                                  section .data
+     2 00000000 456E74657220796F75-         userMsg db "Enter you number: "
+     3 00000009 206E756D6265723A20 
+     4                                      lenUserMsg equ $ - userMsg
+     5 00000012 596F75206861766520-         dispMsg db "You have entered: "
+     6 0000001B 656E74657265643A20 
+     7                                      lenDispMsg equ $ - dispMsg
+     8                                  
+     9                                  section .bss 
+    10 00000000 <res 00000005>              num resb 5
+    11                                  
+    12                                  section .text
+    13                                      global _start
+    14                                  
+    15                                  _start:
+    16 00000000 B804000000                  mov eax, 4              ;
+    17 00000005 BB01000000                  mov ebx, 1              ;
+    18 0000000A B9[00000000]                mov ecx, userMsg        ; printf("%s", userMsg );
+    19 0000000F BA12000000                  mov edx, lenUserMsg     ;
+    20 00000014 CD80                        int 80h                 ;
+    21                                  
+    22 00000016 B803000000                  mov eax, 3              ;
+    23 0000001B BB02000000                  mov ebx, 2              ;scanf( "%s", num );
+    24 00000020 B9[00000000]                mov ecx, num            ;
+    25 00000025 BA05000000                  mov edx, 5              ;
+    26 0000002A CD80                        int 80h                 ;
+    27                                  
+    28 0000002C B804000000                  mov eax, 4              ;
+    29 00000031 BB01000000                  mov ebx, 1              ;
+    30 00000036 B9[12000000]                mov ecx, dispMsg        ;   printf( "%s %s", dispMsg, num ); 
+    31                                  gdbtest:
+    32 0000003B BA17000000                  mov edx, lenDispMsg + 5 ;
+    33 00000040 CD80                        int 80h
+    34                                  
+    35                                     ; mov eax, 4              ;
+    36                                     ; mov ebx, 1              ;
+    37                                     ; mov ecx, num            ; printf( "%s", num );
+    38                                     ; mov edx, 5              ;
+    39                                     ; int 80h
+    40                                  
+    41 00000042 B801000000                  mov eax, 1              ;
+    42 00000047 BA00000000                  mov edx, 0              ; exit(0);
+    43 0000004C CD80                        int 80h                 ;

@@ -1,0 +1,16 @@
+6
+in
+popr ax
+
+push 530
+push 150
+push 5
+pushr ax
+mul
+sin
+mul
+add
+out
+pop
+
+end

@@ -1,0 +1,68 @@
+NASM Output format debug dump
+section_name on init: returning 0
+section_name .data (pass 1): returning 2
+section_name .bss (pass 1): returning 4
+section_name .text (pass 1): returning 6
+section_name on init: returning 8
+section_name on init: returning 10
+deflabel userMsg := 00000002:0000000000000000 local (0)(null)
+deflabel lenUserMsg := ffffffff:0000000000000012 local (0)(null)
+deflabel dispMsg := 00000002:0000000000000012 local (0)(null)
+deflabel lenDispMsg := ffffffff:0000000000000012 local (0)(null)
+deflabel num := 00000004:0000000000000000 local (0)(null)
+deflabel _start := 00000006:0000000000000000 global (1)(null)
+deflabel gdbtest := 00000006:0000000000000046 local (0)(null)
+section_name on init: returning 12
+out to 2, len = 18: raw data = 45 6e 74 65 72 20 79 6f 75 20 6e 75 6d 62 65 72 3a 20 
+out to 2, len = 18: raw data = 59 6f 75 20 68 61 76 65 20 65 6e 74 65 72 65 64 3a 20 
+out to 4, len = 5: reserved.
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b8 
+out to 6, len = 4: raw data = 04 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = bb 
+out to 6, len = 4: raw data = 01 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b9 
+out to 6, len = 4: addr 00000000 (seg 00000002, wrt ffffffff)
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = ba 
+out to 6, len = 4: raw data = 12 00 00 00 
+out to 6, len = 1: raw data = cd 
+out to 6, len = 1: raw data = 80 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b8 
+out to 6, len = 4: raw data = 03 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = bb 
+out to 6, len = 4: raw data = 02 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b9 
+out to 6, len = 4: addr 00000000 (seg 00000004, wrt ffffffff)
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = ba 
+out to 6, len = 4: raw data = 05 00 00 00 
+out to 6, len = 1: raw data = cd 
+out to 6, len = 1: raw data = 80 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b8 
+out to 6, len = 4: raw data = 04 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = bb 
+out to 6, len = 4: raw data = 01 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b9 
+out to 6, len = 4: addr 00000012 (seg 00000002, wrt ffffffff)
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = ba 
+out to 6, len = 4: raw data = 17 00 00 00 
+out to 6, len = 1: raw data = cd 
+out to 6, len = 1: raw data = 80 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = b8 
+out to 6, len = 4: raw data = 01 00 00 00 
+out to 6, len = 1: raw data = 66 
+out to 6, len = 1: raw data = ba 
+out to 6, len = 4: raw data = 00 00 00 00 
+out to 6, len = 1: raw data = cd 
+out to 6, len = 1: raw data = 80 

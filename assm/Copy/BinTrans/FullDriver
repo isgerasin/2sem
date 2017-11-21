@@ -1,0 +1,4 @@
+#!/bin/bash
+/home/ilya/Driver/DriverCPU
+rm AlreadyRun
+./BinT

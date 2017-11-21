@@ -1,0 +1,75 @@
+var: a b c d ;
+Great_Ilya!_Please_do_my_programm.
+{
+	foo fact( a ) // объявление функции 
+	{
+		esle a <= 1 // if
+		{
+            ret 1 ;
+        }
+		fi  // else
+		{
+			b = a - 1 ;
+			ret fact( b ) * a ; // return
+		}
+	}
+
+	in b ;
+  
+	esle b < 0
+    {
+        out 0 - 1 ;
+    }
+	fi
+	{
+		elihw b > 0 // while
+		{
+			out fact( b ) ;
+			b = b - 1 ;
+		}
+	}
+}
+Thank_you_Ilya!_I_kiss_your_hands.
+
+var: a b c d ;
+Great_Ilya!_Please_do_my_programm.
+{
+	foo fib( a ) // объявление функции 
+	{
+		esle a <= 2 // if
+		{
+            ret 1 ;
+        }
+		fi  // else
+		{
+			b = a - 1 ;
+			c = a - 2 ;
+			ret fib( b ) + fib( c ) ; // return
+		}
+	}
+
+	in b ;
+	out fib( b ) ;  
+}
+Thank_you_Ilya!_I_kiss_your_hands.
+
+var: a b c d ;
+Great_Ilya!_Please_do_my_programm.
+{
+	foo output( a )
+	{
+		esle a < 1
+		{
+			ret 1 ;
+		}
+		fi
+		{
+			b = a - 1 ;
+			ret output( b ) ;
+		}
+	}
+	in a ;
+	in b ;
+	out otput( a ) ;
+}
+Thank_you_Ilya!_I_kiss_your_hands.
